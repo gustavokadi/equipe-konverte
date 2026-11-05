@@ -1,20 +1,20 @@
-/* Clínica Sorriso Bom, cliente fictício de demonstração. */
+/* Clínica Sorriso Bom. Direção Anne: floresta e sálvia, laranja só no acento. */
 
 :root {
-  --cor-fundo: #12352F;
-  --cor-fundo-card: #1B463E;
-  --cor-borda: #2C5A50;
-  --cor-texto: #F3EDE2;
+  --cor-fundo: #24382C;
+  --cor-fundo-card: #314A3C;
+  --cor-borda: #4E6658;
+  --cor-texto: #F4F1EA;
 
-  --cor-destaque: #E0A15A;
-  --cor-destaque-claro: #F0C48A;
-  --cor-destaque-escuro: #A86B32;
+  --cor-destaque: #E08A45;
+  --cor-destaque-claro: #F2C39A;
+  --cor-destaque-escuro: #A85E28;
 
-  --cinza-medio: #C9C1B4;
-  --cinza-claro: #F3EDE2;
-  --cinza-escuro: #0C2420;
+  --cinza-medio: #C9C2B4;
+  --cinza-claro: #E7EFE4;
+  --cinza-escuro: #15241C;
 
-  --fonte-titulo: 'Bebas Neue', sans-serif;
+  --fonte-titulo: 'Inter', sans-serif;
   --fonte-corpo: 'Inter', sans-serif;
 
   --padding-mobile: 1.25rem;

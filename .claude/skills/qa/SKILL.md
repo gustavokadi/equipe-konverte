@@ -33,9 +33,9 @@ O script reprova travessão e as palavras da seção "proibidas" do antimodelo. 
 
 Isso exige `guia-visual.md` com paleta, tipografia, composição, foto ou gráfico, densidade, faça e não faça.
 
-Se o estilo principal for básico e objetivo, a spec tem `"estilo": "basico"`, fundos alternados, tipos `texto` e `lista`, e uma lista com traço quando há quatro slides ou mais. Foto no básico reprova.
+O padrão exige pelo menos duas fotos, quatro desenhos diferentes quando há quatro slides ou mais, e tipos que não se repetem lado a lado.
 
-Nos outros estilos, exige pelo menos quatro desenhos diferentes num carrossel de quatro ou mais slides, sem repetir o tipo no slide seguinte. Lista precisa de `itens` separados.
+`"estilo": "basico"` só se pedirem. Aí o fundo alterna preto e branco, os tipos são `texto` e `lista`, e foto reprova.
 
 Além do script, reprove se a peça fizer algo da seção "Não faça" do guia, ou se ignorar a paleta que o guia tirou das referências.
 

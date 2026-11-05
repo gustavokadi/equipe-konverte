@@ -28,19 +28,24 @@ Se o comando avisar que há referência mais nova que o guia, atualize o guia e 
 4. O desenho segue `guia-visual.md`, não um modelo padrão da ferramenta.
 
 ## Escrever
-Leia o estilo principal de `guia-visual.md` e obedeça.
+O padrão é foto e letra, no clima do `guia-visual.md` (para a maioria dos clientes: foto de verdade, letra grande por cima ou ao lado, paleta coesa). A spec não leva `"estilo": "basico"`.
 
-Se o estilo principal for básico e objetivo, a spec leva `"estilo": "basico"`. Quase não há foto. O desenho é este:
+Desenhos, e slides vizinhos não repetem o tipo:
 
-- `texto`: uma ou duas frases curtas, centralizadas, Inter em negrito
-- `lista`: título e itens com traço (`-`), cada item na própria linha
-- `fundo` alterna `preto` e `branco`
-- ícone de carrossel no canto, @ pequeno no rodapé
-- sem Bebas, sem barra de cor, sem card
+- `foto-cheia`: foto até a borda, texto no bloco de baixo
+- `foto-split`: foto de um lado, argumento do outro
+- `lista`: cada item numa linha grande
+- `cta`: preço e uma barra de ação
+- `frase`: só quando o guia pedir uma capa só de tipo
 
-1080x1350. A frase é grande o bastante para ocupar o miolo. Não deixe título no topo e o resto vazio.
+1080x1350. Pelo menos duas fotos num carrossel de quatro ou mais slides. A foto é do ofício do cliente, não de editorial de moda. Crédito no slide e no arquivo de créditos.
 
-Se o guia pedir outro estilo, aí sim variam os desenhos `frase`, `foto-cheia`, `foto-split`, `lista` e `cta`, e slides vizinhos não repetem o tipo. Foto só quando o guia permitir, no máximo o que ele disser.
+`"estilo": "basico"` só se o guia ou a pessoa pedir o preto e branco da ref4. Aí:
+
+- `texto` e `lista` com traço
+- fundo alterna `preto` e `branco`
+- ícone de carrossel no canto
+- sem foto
 
 Legenda: primeira linha forte, 3 a 5 linhas, no máximo 6 hashtags, CTA. Sem travessão.
 

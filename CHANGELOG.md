@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.0, 2026-11-05
+
+- O padrão do cliente volta a ser foto e letra. O básico preto e branco fica opcional, com `estilo: basico`.
+- A demo da clínica usa sálvia e floresta, acento laranja curto, e fotos de consultório, escala de cor e copo de água.
+
 ## 1.2.0, 2026-11-05
 
 - Guia visual da demo passa a ter as quatro referências. O estilo principal é o básico e objetivo.

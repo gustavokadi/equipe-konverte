@@ -3,44 +3,49 @@
 Atualizado em: 2026-11-05
 Lido a partir de `referencias/ref1.png`, `ref2.png`, `ref3.png` e `ref4.png`.
 
-Estilo principal: básico e objetivo (ref4). O Gustavo apontou esse como o que funciona. Os outros três só entram se um slide precisar de foto.
+Estilo principal: foto e letra, no clima da ref3 (Anne, sálvia e floresta), com acento laranja curto da ref1. A ref2 (escuro) fica de reserva, não mistura neste carrossel. A ref4 (básico, preto e branco) é opção, só quando a pessoa pedir `estilo: basico`.
+
+Para esta clínica, a foto é de consultório, cadeira, instrumento ou água. Não é editorial de moda nem mulher de lifestyle.
 
 ## Paleta
-Padrão do carrossel: preto #0A0A0A e branco #FFFFFF, alternando o fundo a cada slide. Texto na cor oposta. Sem cobre, sem verde, sem gradiente.
-
-Se um dia a peça pedir foto, o clima opcional vem das outras referências: laranja queimado só como acento (ref1), cinza chumbo (ref2), sálvia e floresta (ref3). Não misturar os três no mesmo carrossel.
+Floresta #24382C, sálvia #314A3C, névoa #E7EFE4, texto #F4F1EA. Laranja #E08A45 só no rótulo, no número ou na barra de ação. Sem o feed inteiro laranja. Sem preto e branco como padrão.
 
 ## Tipografia
-Inter, peso 700, sem serifa e sem Bebas no carrossel básico. Frase curta, centralizada, grande o bastante para a miniatura. Lista com traço, alinhada à esquerda dentro da margem, cada item na própria linha.
+Inter, peso 700, por cima da foto ou num bloco sálvia. Frase curta. Uma ideia por slide. Bebas não entra neste pacote.
 
 ## Composição
-Dois desenhos, fundo alternado:
+O carrossel padrão mistura foto e letra. Slides vizinhos não repetem o desenho:
 
-- `texto`: uma ou duas frases no centro
-- `lista`: título e itens com traço
+- `foto-cheia`: foto até a borda, texto no bloco escuro de baixo
+- `foto-split`: foto de um lado, argumento do outro
+- `lista`: itens grandes no bloco de cor
+- `cta`: preço e barra laranja
 
-Ícone de carrossel no canto superior direito, só o contorno. @ pequeno no rodapé. Sem barra, sem número gigante, sem card.
+Pelo menos duas fotos de verdade num carrossel de quatro ou mais slides.
 
 ## Foto ou gráfico
-Foto é rara. O padrão é texto puro, como a ref4. Se a pessoa pedir foto, no máximo um slide, com crédito, e o clima de uma referência só (ref1, ref2 ou ref3). Não usar o rosto de banco como se fosse paciente.
+Foto de banco com crédito, ou foto da clínica com autorização. Consultório, cadeira, escala de cor, copo de água. Sem rosto de banco no lugar da Mara. Sem pose de moda.
 
 ## Densidade
-Alta no texto, baixa no enfeite. A frase ocupa o miolo. Não sobra um título no topo e o resto vazio. Não enche com ícone, seta nem cursiva.
+A foto ocupa o quadro. O texto senta em cima dela ou no bloco ao lado, grande o bastante para a miniatura. Não sobra título solto no alto com o resto vazio.
 
 ## Faça
-- Alternar preto e branco
-- Frase curta, uma ideia por slide
-- Lista com traço quando houver mais de um ponto
-- Ícone de carrossel no canto
+- Manter a mesma família de verde em todos os slides
+- Laranja em um ponto só
+- Crédito da foto no slide e em `referencias/banco/creditos.md`
+- Caso da Mara em um slide, sem fingir que a modelo é ela
 
 ## Não faça
-- Paleta decorativa de marca no carrossel básico
-- Foto em todo slide
-- Cursiva laranja, serifa de feed escuro, ou grade de moda, a menos que o guia seja atualizado
-- Travessão, adjetivo de guru, moldura e sombra
+- Estilo básico preto e branco, a menos que peçam `estilo: basico`
+- Cursiva laranja, seta de "siga aqui", serifa de feed escuro
+- Foto de editorial de moda
+- Travessão e tom de guru
+
+## Opcional
+Estilo básico (ref4): `"estilo": "basico"` na spec. Aí o render troca para preto e branco, frase no centro, lista com traço e ícone de carrossel. Não é o padrão do cliente.
 
 ## Máquina
-estilo: basico
-tipos: texto, lista
-fundos: preto, branco
-foto: rara
+estilo: foto-letra
+tipos: foto-cheia, foto-split, lista, cta
+foto: obrigatoria-no-padrao
+acento: laranja-curto

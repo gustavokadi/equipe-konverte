@@ -2,11 +2,11 @@
 
 Cliente fictício. Fontes embutidas no produto, licença OFL.
 
-## Título
-Bebas Neue. Caixa alta natural da fonte. Uma ou duas palavras em destaque na cor cobre.
+## Título e corpo
+Inter, peso 700 nos títulos. O pacote de foto e letra não usa Bebas. Laranja só no rótulo ou na barra.
 
 ## Corpo
-Inter. Frases curtas. Sem travessão.
+Frases curtas. Sem travessão.
 
 ## Carrossel 1080x1350
 - Título de capa: 108px

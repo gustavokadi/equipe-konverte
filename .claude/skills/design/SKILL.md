@@ -8,9 +8,9 @@ description: Direção visual de carrossel, reel e página. Paleta do cliente, B
 Texto da Equipe Konverte. A skill frontend-design da Anthropic é Apache-2.0 e pode ser instalada à parte. Ela não foi copiada para cá.
 
 ## Regras
-- O carrossel segue `guia-visual.md`. A paleta da marca não vence o estilo principal.
-- Se o estilo principal for básico e objetivo: fundo preto e branco alternados, Inter negrito, frase curta no centro, lista com traço, ícone de carrossel no canto. Quase sem enfeite. A letra ocupa o miolo. Foto é exceção.
-- Nos outros estilos: cor de `identidade/paleta.css`, título em Bebas Neue, corpo em Inter. As duas estão em `motor/fontes`, licença OFL.
+- O padrão do carrossel é foto e letra: imagem até a borda ou na metade do quadro, frase curta por cima, paleta única do `guia-visual.md`. Laranja, se existir, é acento, não o fundo.
+- `"estilo": "basico"` só quando pedirem: preto e branco, Inter negrito, frase no centro, lista com traço, ícone de carrossel. Não é o padrão do cliente.
+- Cor de `identidade/paleta.css`. Inter para o pacote de foto. Bebas só se o guia pedir. As duas estão em `motor/fontes`, licença OFL.
 - Não preencha com ícone decorativo, cursiva de acento nem moldura.
 - Um sistema por cliente. Não mude o tipo de capa em relação à peça anterior sem olhar a última.
 - Sem gradiente roxo, sem card flutuando com sombra genérica, sem três colunas iguais só porque "parece site".

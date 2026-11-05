@@ -139,16 +139,16 @@ function htmlFotoCheia(c, slide, width, height, numero, total, foto) {
     ? `<div style="margin-top:10px;font-size:16px;letter-spacing:0.04em;color:${c.medio};">${escapar(slide.credito)}</div>`
     : '';
   const fundo = foto
-    ? `<img src="${foto}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">`
+    ? `<img src="${foto}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:${slide.foco || 'center'};">`
     : `<div style="position:absolute;inset:0;background:${c.destaque};"></div>
        <div style="position:absolute;left:76px;top:80px;right:200px;font-family:${c.titulo};font-size:120px;line-height:0.84;color:${c.escuro};">${escapar(slide.selo || slide.kicker || 'CADEIRA')}</div>`;
   return documento(c, width, height, `
     ${fundo}
     ${aviso}
-    <div style="position:absolute;left:0;right:0;bottom:0;height:62%;background:linear-gradient(180deg, rgba(12,36,32,0) 0%, ${c.escuro} 38%, ${c.escuro} 100%);"></div>
+    <div style="position:absolute;left:0;right:0;bottom:0;height:58%;background:linear-gradient(180deg, rgba(21,36,28,0) 0%, ${c.escuro} 46%, ${c.escuro} 100%);"></div>
     <div style="position:absolute;left:72px;right:72px;bottom:48px;">
       <div class="kicker">${escapar(slide.kicker || '')}</div>
-      <h1 style="font-family:${c.titulo};font-weight:400;font-size:92px;line-height:0.9;margin-top:16px;">${escapar(slide.titulo || '')}</h1>
+      <h1 style="font-family:${c.corpo};font-weight:700;font-size:68px;line-height:1.05;margin-top:16px;">${escapar(slide.titulo || '')}</h1>
       <p style="font-size:34px;line-height:1.3;margin-top:22px;max-width:920px;">${escapar(slide.texto || '')}</p>
       ${credito}
       ${rodapeHtml(c, slide.rodape, direita)}
@@ -164,7 +164,7 @@ function htmlFotoSplit(c, slide, width, height, numero, total, foto) {
     ? `<div style="position:absolute;left:16px;right:16px;bottom:16px;background:rgba(12,36,32,0.78);color:#F3EDE2;font-size:15px;line-height:1.3;padding:8px 10px;">${escapar(slide.credito)}</div>`
     : '';
   const painel = foto
-    ? `<img src="${foto}" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">${creditoFoto}`
+    ? `<img src="${foto}" alt="" style="width:100%;height:100%;object-fit:cover;object-position:${slide.foco || 'center center'};display:block;">${creditoFoto}`
     : `<div style="height:100%;background:${c.claro};color:${c.escuro};padding:48px 40px;display:flex;flex-direction:column;justify-content:space-between;">
         <div style="font-size:20px;letter-spacing:0.18em;font-weight:700;">${escapar(slide.selo || 'PAINEL')}</div>
         <div style="font-family:${c.titulo};font-size:200px;line-height:0.8;">${escapar(numero)}</div>
@@ -179,7 +179,7 @@ function htmlFotoSplit(c, slide, width, height, numero, total, foto) {
       <div style="height:100%;background:${c.fundo};padding:64px 52px 44px;display:flex;flex-direction:column;justify-content:space-between;">
         <div>
           <div class="kicker">${escapar(slide.kicker || '')}</div>
-          <h1 style="font-family:${c.titulo};font-weight:400;font-size:76px;line-height:0.9;margin-top:18px;">${escapar(slide.titulo || '')}</h1>
+          <h1 style="font-family:${c.corpo};font-weight:700;font-size:52px;line-height:1.08;margin-top:18px;">${escapar(slide.titulo || '')}</h1>
         </div>
         <p style="font-size:32px;line-height:1.32;">${escapar(slide.texto || '')}</p>
         <div>
@@ -197,7 +197,7 @@ function htmlLista(c, slide, width, height, numero, total) {
     .map((item, i) => {
       const n = String(i + 1).padStart(2, '0');
       return `<div style="flex:1;display:flex;align-items:center;gap:28px;border-top:2px solid ${c.card};">
-        <span style="font-family:${c.titulo};font-size:78px;line-height:1;color:${c.destaque};width:110px;">${n}</span>
+        <span style="font-family:${c.corpo};font-size:42px;font-weight:700;line-height:1;color:${c.destaque};width:84px;">${n}</span>
         <span style="font-size:40px;line-height:1.15;font-weight:700;">${escapar(item)}</span>
       </div>`;
     })
@@ -206,7 +206,7 @@ function htmlLista(c, slide, width, height, numero, total) {
     <div style="height:100%;display:flex;flex-direction:column;padding:60px 72px 44px;background:${c.fundo};">
       <div style="margin-bottom:12px;">
         <div class="kicker">${escapar(slide.kicker || '')}</div>
-        <h1 style="font-family:${c.titulo};font-weight:400;font-size:84px;line-height:0.9;margin-top:12px;">${escapar(slide.titulo || '')}</h1>
+        <h1 style="font-family:${c.corpo};font-weight:700;font-size:64px;line-height:1.05;margin-top:12px;">${escapar(slide.titulo || '')}</h1>
       </div>
       <div style="flex:1;display:flex;flex-direction:column;margin-top:20px;">${linhas}</div>
       ${rodapeHtml(c, slide.rodape, direita)}
@@ -217,15 +217,11 @@ function htmlCta(c, slide, width, height, numero, total) {
   const direita = `${numero} / ${String(total).padStart(2, '0')}`;
   return documento(c, width, height, `
     <div style="height:100%;display:flex;flex-direction:column;background:${c.fundo};">
-      <div style="flex:1;padding:68px 76px 28px;display:flex;flex-direction:column;justify-content:space-between;">
-        <div>
-          <div class="kicker">${escapar(slide.kicker || '')}</div>
-          <h1 style="font-family:${c.titulo};font-weight:400;font-size:108px;line-height:0.88;margin-top:16px;">${escapar(slide.titulo || '')}</h1>
-        </div>
-        <div>
-          <div style="font-family:${c.titulo};font-size:150px;line-height:0.84;color:${c.destaque};">${escapar(slide.preco || '')}</div>
-          <p style="font-size:36px;line-height:1.28;margin-top:18px;max-width:900px;">${escapar(slide.texto || '')}</p>
-        </div>
+      <div style="flex:1;padding:72px 76px 36px;display:flex;flex-direction:column;justify-content:center;">
+        <div class="kicker">${escapar(slide.kicker || '')}</div>
+        <h1 style="font-family:${c.corpo};font-weight:700;font-size:72px;line-height:1.05;margin-top:18px;">${escapar(slide.titulo || '')}</h1>
+        <div style="font-family:${c.corpo};font-weight:700;font-size:108px;line-height:1;color:${c.texto};margin-top:36px;">${escapar(slide.preco || '')}</div>
+        <p style="font-size:34px;line-height:1.3;margin-top:22px;max-width:900px;">${escapar(slide.texto || '')}</p>
       </div>
       <div style="background:${c.destaque};color:${c.escuro};padding:36px 76px;font-size:36px;font-weight:700;line-height:1.2;">${escapar(slide.cta || '')}</div>
       <div style="padding:22px 76px 36px;">${rodapeHtml(c, slide.rodape, direita)}</div>

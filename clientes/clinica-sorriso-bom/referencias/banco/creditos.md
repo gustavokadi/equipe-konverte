@@ -24,3 +24,22 @@ A pessoa da foto não é a Mara. A Mara é personagem fictícia. A foto de água
 - Arquivo: referencias/banco/1793896799336-1.jpg
 - Crédito: Foto de Nataliya Vaitkevich no Pexels. https://www.pexels.com/photo/a-hand-pouring-water-on-a-wine-glass-with-ice-cubes-4641430/
 
+## 1793899286663-1.jpg
+
+- Banco: Pexels
+- Autor: Pavel Danilyuk
+- Autor URL: https://www.pexels.com/@pavel-danilyuk
+- Página: https://www.pexels.com/photo/empty-dentist-office-6812461/
+- Consulta: cadeira de consultorio
+- Arquivo: referencias/banco/1793899286663-1.jpg
+- Crédito: Foto de Pavel Danilyuk no Pexels. https://www.pexels.com/photo/empty-dentist-office-6812461/
+
+## 1793899287272-1.jpg
+
+- Banco: Pexels
+- Autor: cottonbro studio
+- Autor URL: https://www.pexels.com/@cottonbro
+- Página: https://www.pexels.com/photo/a-glass-of-water-over-the-table-5853213/
+- Consulta: copo de agua
+- Arquivo: referencias/banco/1793899287272-1.jpg
+- Crédito: Foto de cottonbro studio no Pexels. https://www.pexels.com/photo/a-glass-of-water-over-the-table-5853213/

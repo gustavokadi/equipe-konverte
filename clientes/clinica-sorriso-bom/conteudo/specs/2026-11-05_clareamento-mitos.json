@@ -1,7 +1,7 @@
 {
   "id": "2026-11-05_clareamento-mitos",
   "tema": "mitos do clareamento",
-  "estilo": "basico",
+  "estilo": "foto-letra",
   "experiencia": "EXP-01",
   "tese": "T1",
   "largura": 1080,
@@ -9,39 +9,55 @@
   "legenda": "Clareamento sem consulta é roleta.\n\nA Mara chegou sem conseguir tomar água gelada. A gente tratou a gengiva. A cor esperou.\n\nA avaliação olha:\n- gengiva quieta\n- sensibilidade medida\n- expectativa escrita\n- a cor do esmalte\n\nMarca a avaliação no Cambuí. R$ 150.\n\n#clareamento #odontologia #campinas #gengiva #sorrisobom",
   "slides": [
     {
-      "tipo": "texto",
-      "fundo": "branco",
-      "linhas": ["Clareamento sem consulta é roleta."],
+      "tipo": "foto-cheia",
+      "foto": "referencias/banco/1793899286663-1.jpg",
+      "credito": "Foto: Pavel Danilyuk / Pexels",
+      "foco": "center 60%",
+      "kicker": "Cambuí",
+      "titulo": "Clareamento sem consulta é roleta.",
+      "texto": "Gel não vê gengiva. A cadeira vê.",
       "rodape": "@clinicasorrisobom"
     },
     {
-      "tipo": "texto",
-      "fundo": "preto",
-      "linhas": ["Gel mais forte não clareia mais."],
+      "tipo": "foto-split",
+      "foto": "referencias/banco/1793896798779-1.jpg",
+      "credito": "Foto: Nadezhda Moryak / Pexels",
+      "foco": "center 35%",
+      "kicker": "Mito",
+      "titulo": "Gel mais forte não clareia mais.",
+      "texto": "Clareia o que já estava saudável. Em gengiva irritada, a dor sobe e a foto piora.",
+      "nota": "Força sem diagnóstico é pressa.",
       "rodape": "@clinicasorrisobom"
     },
     {
-      "tipo": "texto",
-      "fundo": "branco",
-      "linhas": ["A Mara chegou sem água gelada.", "A cor esperou."],
+      "tipo": "foto-cheia",
+      "foto": "referencias/banco/1793899287272-1.jpg",
+      "credito": "Foto: cottonbro studio / Pexels",
+      "foco": "30% 40%",
+      "kicker": "A Mara",
+      "titulo": "Chegou sem água gelada.",
+      "texto": "Três semanas de gengiva. A cor esperou.",
       "rodape": "@clinicasorrisobom"
     },
     {
       "tipo": "lista",
-      "fundo": "preto",
-      "titulo": "A avaliação olha:",
+      "kicker": "A avaliação",
+      "titulo": "Quatro coisas antes do gel",
       "itens": [
-        "gengiva quieta",
-        "sensibilidade medida",
-        "expectativa escrita",
-        "a cor do esmalte"
+        "Gengiva quieta",
+        "Sensibilidade medida",
+        "Expectativa escrita",
+        "A cor do esmalte"
       ],
       "rodape": "@clinicasorrisobom"
     },
     {
-      "tipo": "texto",
-      "fundo": "branco",
-      "linhas": ["Marca a avaliação.", "R$ 150.", "Se doer, a sessão para."],
+      "tipo": "cta",
+      "kicker": "Campinas",
+      "titulo": "Marca a avaliação",
+      "preco": "R$ 150",
+      "texto": "Se a boca não estiver pronta, você sai com o plano da gengiva, não com uma sessão empurrada.",
+      "cta": "Manda mensagem e diz: quero a avaliação.",
       "rodape": "@clinicasorrisobom"
     }
   ]

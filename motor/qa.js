@@ -76,9 +76,11 @@ function revisarCarrossel(dir, specPath) {
   const spec = JSON.parse(fs.readFileSync(path.resolve(specPath), 'utf8'));
   const slides = spec.slides || [];
   const guia = ler(path.join(dir, 'guia-visual.md'));
-  const basico = spec.estilo === 'basico' || /estilo principal:\s*b[aá]sico/i.test(guia);
-  if (basico && spec.estilo !== 'basico') erros.push('guia pede básico e objetivo, mas a spec não marca estilo basico');
-  if (spec.estilo === 'basico') {
+  const basico = spec.estilo === 'basico';
+  if (/estilo principal:\s*b[aá]sico/i.test(guia) && spec.estilo !== 'basico') {
+    erros.push('o guia marcou o básico como estilo principal. O padrão dos clientes é foto e letra. Básico só com estilo basico na spec.');
+  }
+  if (basico) {
     slides.forEach((slide, i) => {
       if (!['texto', 'lista'].includes(slide.tipo)) erros.push(`slide ${i + 1} fora do básico: ${slide.tipo || 'vazio'}`);
       if (!['preto', 'branco'].includes(slide.fundo)) erros.push(`slide ${i + 1} sem fundo preto ou branco`);
@@ -103,6 +105,8 @@ function revisarCarrossel(dir, specPath) {
   tipos.forEach((tipo, i) => {
     if (!permitidos.includes(tipo)) erros.push(`slide ${i + 1} com tipo desconhecido: ${tipo || 'vazio'}`);
   });
+  const comFoto = slides.filter((s) => s.foto && (s.tipo === 'foto-cheia' || s.tipo === 'foto-split'));
+  if (slides.length >= 4 && comFoto.length < 2) erros.push('o padrão pede pelo menos duas fotos de verdade');
   slides.forEach((slide, i) => {
     if (slide.tipo === 'lista') {
       if (!Array.isArray(slide.itens) || slide.itens.length < 2) erros.push(`slide ${i + 1} lista sem itens grandes`);
