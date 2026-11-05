@@ -1,13 +1,13 @@
-Gel mais forte não conserta gengiva.
+Clareamento sem consulta é roleta.
 
-A Mara chegou com dois tubos da farmácia e o dente doendo no ar. A gente parou o clareamento, tratou a gengiva e só depois voltou na cor.
+A Mara chegou sem conseguir tomar água gelada. A gente tratou a gengiva. A cor esperou.
 
-O que a avaliação olha:
+A avaliação olha:
 - gengiva quieta
-- sensibilidade de verdade
+- sensibilidade medida
 - expectativa escrita
-- a cor que o esmalte aguenta
+- a cor do esmalte
 
-Se doer, a sessão para. Marca a avaliação no Cambuí.
+Marca a avaliação no Cambuí. R$ 150.
 
 #clareamento #odontologia #campinas #gengiva #sorrisobom

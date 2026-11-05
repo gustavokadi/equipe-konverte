@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0, 2026-11-05
+
+- Guia visual da demo passa a ter as quatro referências. O estilo principal é o básico e objetivo.
+- Carrossel básico: preto e branco alternados, frase curta, lista com traço e ícone de carrossel.
+- A peça da clínica foi renderizada de novo nesse estilo, sem foto.
+
 ## 1.1.1, 2026-11-05
 
 - O banco pede a foto já no tamanho do slide, com crédito no PNG

@@ -232,7 +232,67 @@ function htmlCta(c, slide, width, height, numero, total) {
     </div>`);
 }
 
+function basicoAtivo(slide) {
+  return slide.fundo === 'preto' || slide.fundo === 'branco' || slide.tipo === 'texto';
+}
+
+function parBasico(fundo) {
+  const claro = fundo === 'branco';
+  return {
+    bg: claro ? '#FFFFFF' : '#0A0A0A',
+    fg: claro ? '#111111' : '#F5F5F5',
+  };
+}
+
+function iconeCarrossel(cor) {
+  return `<svg width="58" height="58" viewBox="0 0 58 58" style="position:absolute;top:40px;right:40px;" aria-hidden="true">
+    <rect x="6" y="16" width="30" height="30" rx="6" fill="none" stroke="${cor}" stroke-width="3.2"/>
+    <rect x="18" y="8" width="30" height="30" rx="6" fill="${parFundo(cor)}" stroke="${cor}" stroke-width="3.2"/>
+  </svg>`;
+}
+
+function parFundo(cor) {
+  return cor === '#111111' ? '#FFFFFF' : '#0A0A0A';
+}
+
+function htmlBasico(slide, width, height) {
+  const pal = parBasico(slide.fundo);
+  const linhas = Array.isArray(slide.linhas) && slide.linhas.length
+    ? slide.linhas
+    : String(slide.texto || slide.titulo || '').split('\n').filter(Boolean);
+  const chars = linhas.join(' ').length;
+  const tamanho = chars < 32 ? 86 : chars < 60 ? 68 : chars < 110 ? 54 : 44;
+  const corpo = linhas
+    .map((linha) => `<p style="margin:0 0 18px;">${escapar(linha)}</p>`)
+    .join('');
+  const itens = Array.isArray(slide.itens) ? slide.itens : [];
+  const lista = itens.length
+    ? `<div style="margin-top:28px;text-align:left;">${itens
+        .map(
+          (item) =>
+            `<p style="margin:0 0 22px;font-size:46px;font-weight:700;line-height:1.2;">- ${escapar(item)}</p>`
+        )
+        .join('')}</div>`
+    : '';
+  const titulo = slide.titulo
+    ? `<p style="margin:0 0 8px;font-size:${itens.length ? 62 : tamanho}px;font-weight:700;line-height:1.12;">${escapar(slide.titulo)}</p>`
+    : '';
+  return documento(
+    { fundo: pal.bg, texto: pal.fg, corpo: "'Inter', sans-serif", titulo: "'Inter', sans-serif", destaque: pal.fg },
+    width,
+    height,
+    `${iconeCarrossel(pal.fg)}
+    <div style="height:100%;background:${pal.bg};color:${pal.fg};display:flex;align-items:center;justify-content:center;padding:128px 84px 110px;text-align:${itens.length ? 'left' : 'center'};">
+      <div style="width:100%;font-family:'Inter',sans-serif;font-weight:700;font-size:${tamanho}px;line-height:1.15;">
+        ${titulo}${itens.length ? '' : corpo}${lista}
+      </div>
+    </div>
+    <div style="position:absolute;left:0;right:0;bottom:42px;text-align:center;font-family:'Inter',sans-serif;font-size:24px;letter-spacing:0.02em;color:${pal.fg};opacity:0.72;">${escapar(slide.rodape || '')}</div>`
+  );
+}
+
 function htmlSlide(paleta, slide, width, height, indice, total, clienteDir) {
+  if (basicoAtivo(slide)) return htmlBasico(slide, width, height);
   const c = tema(paleta);
   const numero = String(indice + 1).padStart(2, '0');
   const tipo = TIPOS.includes(slide.tipo) ? slide.tipo : slide.tipo === 'capa' ? 'frase' : 'frase';

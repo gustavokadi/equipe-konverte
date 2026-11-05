@@ -28,15 +28,19 @@ Se o comando avisar que há referência mais nova que o guia, atualize o guia e 
 4. O desenho segue `guia-visual.md`, não um modelo padrão da ferramenta.
 
 ## Escrever
-Cinco desenhos, e slides vizinhos não repetem o tipo:
+Leia o estilo principal de `guia-visual.md` e obedeça.
 
-- `frase`: afirmação, uma palavra gigante
-- `foto-cheia`: foto ou bloco até a borda, texto no bloco de baixo
-- `foto-split`: foto ou painel de um lado, texto do outro
-- `lista`: cada item numa linha grande, com número
-- `cta`: preço e barra de ação
+Se o estilo principal for básico e objetivo, a spec leva `"estilo": "basico"`. Quase não há foto. O desenho é este:
 
-1080x1350. Nada de metade do quadro vazia. A lista usa o campo `itens`, um item por linha, não um parágrafo.
+- `texto`: uma ou duas frases curtas, centralizadas, Inter em negrito
+- `lista`: título e itens com traço (`-`), cada item na própria linha
+- `fundo` alterna `preto` e `branco`
+- ícone de carrossel no canto, @ pequeno no rodapé
+- sem Bebas, sem barra de cor, sem card
+
+1080x1350. A frase é grande o bastante para ocupar o miolo. Não deixe título no topo e o resto vazio.
+
+Se o guia pedir outro estilo, aí sim variam os desenhos `frase`, `foto-cheia`, `foto-split`, `lista` e `cta`, e slides vizinhos não repetem o tipo. Foto só quando o guia permitir, no máximo o que ele disser.
 
 Legenda: primeira linha forte, 3 a 5 linhas, no máximo 6 hashtags, CTA. Sem travessão.
 

@@ -2,25 +2,25 @@
   "itens": [
     {
       "status": "aguardando",
-      "criado_em": "2026-11-05T16:40:34.203Z",
+      "criado_em": "2026-11-05T17:16:22.046Z",
       "id": "2026-11-05_clareamento-mitos",
       "tipo": "carrossel",
       "caminho": "conteudo/output/2026-11-05_clareamento-mitos"
     },
     {
       "status": "aguardando",
-      "criado_em": "2026-11-05T16:40:39.168Z",
+      "criado_em": "2026-11-05T17:16:26.717Z",
       "id": "2026-11-05_clareamento-consulta",
       "tipo": "reel",
       "caminho": "conteudo/reels/2026-11-05_clareamento-consulta"
     },
     {
       "status": "aguardando",
-      "criado_em": "2026-11-05T16:40:39.313Z",
+      "criado_em": "2026-11-05T17:16:26.852Z",
       "id": "2026-11-05_formato",
       "tipo": "roteiro-clone",
       "caminho": "clone/2026-11-05_formato"
     }
   ],
-  "atualizado_em": "2026-11-05T16:40:39.262Z"
+  "atualizado_em": "2026-11-05T17:16:26.808Z"
 }

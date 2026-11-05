@@ -1,6 +1,6 @@
 {
   "name": "equipe-konverte",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "private": true,
   "description": "Equipe de marketing com IA dentro do VS Code. Produto da Konverte.",
   "engines": {

@@ -75,13 +75,31 @@ function revisarCarrossel(dir, specPath) {
   const erros = revisarGuia(dir);
   const spec = JSON.parse(fs.readFileSync(path.resolve(specPath), 'utf8'));
   const slides = spec.slides || [];
+  const guia = ler(path.join(dir, 'guia-visual.md'));
+  const basico = spec.estilo === 'basico' || /estilo principal:\s*b[aá]sico/i.test(guia);
+  if (basico && spec.estilo !== 'basico') erros.push('guia pede básico e objetivo, mas a spec não marca estilo basico');
+  if (spec.estilo === 'basico') {
+    slides.forEach((slide, i) => {
+      if (!['texto', 'lista'].includes(slide.tipo)) erros.push(`slide ${i + 1} fora do básico: ${slide.tipo || 'vazio'}`);
+      if (!['preto', 'branco'].includes(slide.fundo)) erros.push(`slide ${i + 1} sem fundo preto ou branco`);
+      if (slide.foto) erros.push(`slide ${i + 1} usa foto. No básico, foto é rara e não é o padrão`);
+    });
+    for (let i = 1; i < slides.length; i++) {
+      if (slides[i].fundo && slides[i].fundo === slides[i - 1].fundo) {
+        erros.push(`slides ${i} e ${i + 1} repetem o fundo ${slides[i].fundo}`);
+      }
+    }
+    const temLista = slides.some((s) => s.tipo === 'lista' && Array.isArray(s.itens) && s.itens.length >= 2);
+    if (slides.length >= 4 && !temLista) erros.push('básico com 4 slides ou mais precisa de uma lista com traços');
+    return erros;
+  }
   const tipos = slides.map((s) => s.tipo);
   const distintos = new Set(tipos);
   if (slides.length >= 4 && distintos.size < 4) erros.push(`só ${distintos.size} composições diferentes`);
   for (let i = 1; i < tipos.length; i++) {
     if (tipos[i] && tipos[i] === tipos[i - 1]) erros.push(`slides ${i} e ${i + 1} repetem o tipo ${tipos[i]}`);
   }
-  const permitidos = ['frase', 'foto-cheia', 'foto-split', 'lista', 'cta'];
+  const permitidos = ['frase', 'foto-cheia', 'foto-split', 'lista', 'cta', 'texto'];
   tipos.forEach((tipo, i) => {
     if (!permitidos.includes(tipo)) erros.push(`slide ${i + 1} com tipo desconhecido: ${tipo || 'vazio'}`);
   });

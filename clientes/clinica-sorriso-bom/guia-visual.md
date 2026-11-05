@@ -1,43 +1,46 @@
 # Guia visual
 
 Atualizado em: 2026-11-05
-Cliente fictício. Análise das anotações em `referencias/` e do `logo.svg`. Não havia print de concorrente nem board de Pinterest para ler como imagem. Quando esses arquivos chegarem, reescrever este guia. A skill manda ler print em modo multimodal.
+Lido a partir de `referencias/ref1.png`, `ref2.png`, `ref3.png` e `ref4.png`.
+
+Estilo principal: básico e objetivo (ref4). O Gustavo apontou esse como o que funciona. Os outros três só entram se um slide precisar de foto.
 
 ## Paleta
-Verde profundo #12352F no fundo. Cobre #E0A15A só em palavra, número ou barra. Creme #F3EDE2 quando o bloco for claro, com texto #0C2420. Sem roxo, sem mármore preto, sem dourado espalhado no quadro inteiro.
+Padrão do carrossel: preto #0A0A0A e branco #FFFFFF, alternando o fundo a cada slide. Texto na cor oposta. Sem cobre, sem verde, sem gradiente.
+
+Se um dia a peça pedir foto, o clima opcional vem das outras referências: laranja queimado só como acento (ref1), cinza chumbo (ref2), sálvia e floresta (ref3). Não misturar os três no mesmo carrossel.
 
 ## Tipografia
-Título em Bebas Neue, grande o bastante para ler na miniatura. Corpo em Inter, peso 700 nas listas. Uma palavra de destaque por capa, não uma frase inteira em cor.
+Inter, peso 700, sem serifa e sem Bebas no carrossel básico. Frase curta, centralizada, grande o bastante para a miniatura. Lista com traço, alinhada à esquerda dentro da margem, cada item na própria linha.
 
 ## Composição
-Cinco desenhos, e o carrossel precisa variar:
-- frase: palavra gigante, apoio embaixo
-- foto-cheia: imagem ou bloco de cor até a borda, texto no terço de baixo
-- foto-split: painel à esquerda, argumento à direita
-- lista: cada item na própria linha, número grande
-- cta: preço grande e barra de ação na base
+Dois desenhos, fundo alternado:
 
-Nenhum slide deixa metade do quadro vazia.
+- `texto`: uma ou duas frases no centro
+- `lista`: título e itens com traço
+
+Ícone de carrossel no canto superior direito, só o contorno. @ pequeno no rodapé. Sem barra, sem número gigante, sem card.
 
 ## Foto ou gráfico
-Foto só se for de banco com crédito, ou foto da própria clínica com autorização. Sem isso, painel gráfico de cor, com a tarja "sem foto de banco". Proibido sorriso de banco no lugar de paciente.
+Foto é rara. O padrão é texto puro, como a ref4. Se a pessoa pedir foto, no máximo um slide, com crédito, e o clima de uma referência só (ref1, ref2 ou ref3). Não usar o rosto de banco como se fosse paciente.
 
 ## Densidade
-Alta. O olho percorre o slide inteiro. Lista com quatro linhas grandes, não um parágrafo.
+Alta no texto, baixa no enfeite. A frase ocupa o miolo. Não sobra um título no topo e o resto vazio. Não enche com ícone, seta nem cursiva.
 
 ## Faça
-- Repetir a barra de cobre e o @ no rodapé
-- Deixar o caso da Mara ocupar um slide sozinho
-- Escrever o preço da avaliação no slide de ação
+- Alternar preto e branco
+- Frase curta, uma ideia por slide
+- Lista com traço quando houver mais de um ponto
+- Ícone de carrossel no canto
 
 ## Não faça
-- Quadro vazio embaixo do título
-- O mesmo desenho em dois slides seguidos
-- Antes e depois
-- Gradiente roxo e card com sombra genérica
-- Logo de dente de desenho
+- Paleta decorativa de marca no carrossel básico
+- Foto em todo slide
+- Cursiva laranja, serifa de feed escuro, ou grade de moda, a menos que o guia seja atualizado
+- Travessão, adjetivo de guru, moldura e sombra
 
 ## Máquina
-tipos: frase, foto-cheia, foto-split, lista, cta
-densidade: alta
-foto: grafico-se-sem-chave
+estilo: basico
+tipos: texto, lista
+fundos: preto, branco
+foto: rara

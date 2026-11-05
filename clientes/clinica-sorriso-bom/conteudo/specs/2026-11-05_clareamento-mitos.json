@@ -1,61 +1,47 @@
 {
   "id": "2026-11-05_clareamento-mitos",
   "tema": "mitos do clareamento",
+  "estilo": "basico",
   "experiencia": "EXP-01",
   "tese": "T1",
   "largura": 1080,
   "altura": 1350,
-  "legenda": "Gel mais forte não conserta gengiva.\n\nA Mara chegou com dois tubos da farmácia e o dente doendo no ar. A gente parou o clareamento, tratou a gengiva e só depois voltou na cor.\n\nO que a avaliação olha:\n- gengiva quieta\n- sensibilidade de verdade\n- expectativa escrita\n- a cor que o esmalte aguenta\n\nSe doer, a sessão para. Marca a avaliação no Cambuí.\n\n#clareamento #odontologia #campinas #gengiva #sorrisobom",
+  "legenda": "Clareamento sem consulta é roleta.\n\nA Mara chegou sem conseguir tomar água gelada. A gente tratou a gengiva. A cor esperou.\n\nA avaliação olha:\n- gengiva quieta\n- sensibilidade medida\n- expectativa escrita\n- a cor do esmalte\n\nMarca a avaliação no Cambuí. R$ 150.\n\n#clareamento #odontologia #campinas #gengiva #sorrisobom",
   "slides": [
     {
-      "tipo": "frase",
-      "kicker": "Cambuí, consultório",
-      "titulo": "Clareamento sem consulta é",
-      "destaque": "ROLETA",
-      "apoio": "Gel não vê gengiva. A cadeira vê.",
+      "tipo": "texto",
+      "fundo": "branco",
+      "linhas": ["Clareamento sem consulta é roleta."],
       "rodape": "@clinicasorrisobom"
     },
     {
-      "tipo": "foto-split",
-      "foto": "referencias/banco/1793896798779-1.jpg",
-      "credito": "Foto: Nadezhda Moryak / Pexels",
-      "kicker": "Mito 01",
-      "selo": "MITO",
-      "palavra": "GEL FORTE",
-      "titulo": "Mais forte não clareia mais",
-      "texto": "Clareia o que já estava saudável. Em gengiva irritada, aumenta a dor e a foto fica pior.",
-      "nota": "Força sem diagnóstico é pressa.",
+      "tipo": "texto",
+      "fundo": "preto",
+      "linhas": ["Gel mais forte não clareia mais."],
       "rodape": "@clinicasorrisobom"
     },
     {
-      "tipo": "foto-cheia",
-      "foto": "referencias/banco/1793896799336-1.jpg",
-      "credito": "Foto: Nataliya Vaitkevich / Pexels",
-      "kicker": "Cadeira, EXP-01",
-      "selo": "A MARA",
-      "titulo": "Dois tubos, quinze dias",
-      "texto": "Chegou sem conseguir tomar água gelada. Três semanas de gengiva. A cor esperou.",
+      "tipo": "texto",
+      "fundo": "branco",
+      "linhas": ["A Mara chegou sem água gelada.", "A cor esperou."],
       "rodape": "@clinicasorrisobom"
     },
     {
       "tipo": "lista",
-      "kicker": "A avaliação olha",
-      "titulo": "Quatro coisas antes do gel",
+      "fundo": "preto",
+      "titulo": "A avaliação olha:",
       "itens": [
-        "Gengiva quieta",
-        "Sensibilidade medida",
-        "Expectativa escrita",
-        "A cor do esmalte, não a da novela"
+        "gengiva quieta",
+        "sensibilidade medida",
+        "expectativa escrita",
+        "a cor do esmalte"
       ],
       "rodape": "@clinicasorrisobom"
     },
     {
-      "tipo": "cta",
-      "kicker": "Campinas",
-      "titulo": "Marca a avaliação",
-      "preco": "R$ 150",
-      "texto": "Se a boca não estiver pronta, você sai com o plano da gengiva, não com uma sessão empurrada.",
-      "cta": "Manda mensagem e diz: quero a avaliação.",
+      "tipo": "texto",
+      "fundo": "branco",
+      "linhas": ["Marca a avaliação.", "R$ 150.", "Se doer, a sessão para."],
       "rodape": "@clinicasorrisobom"
     }
   ]

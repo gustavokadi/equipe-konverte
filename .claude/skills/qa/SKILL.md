@@ -31,7 +31,11 @@ O script reprova travessão e as palavras da seção "proibidas" do antimodelo. 
 ## Guia visual, carrossel
 `node motor/qa.js --cliente <slug> --carrossel <spec.json>`
 
-Isso exige `guia-visual.md` com paleta, tipografia, composição, foto ou gráfico, densidade, faça e não faça. Também exige pelo menos quatro desenhos diferentes num carrossel de quatro ou mais slides, sem repetir o tipo no slide seguinte. Lista precisa de `itens` separados.
+Isso exige `guia-visual.md` com paleta, tipografia, composição, foto ou gráfico, densidade, faça e não faça.
+
+Se o estilo principal for básico e objetivo, a spec tem `"estilo": "basico"`, fundos alternados, tipos `texto` e `lista`, e uma lista com traço quando há quatro slides ou mais. Foto no básico reprova.
+
+Nos outros estilos, exige pelo menos quatro desenhos diferentes num carrossel de quatro ou mais slides, sem repetir o tipo no slide seguinte. Lista precisa de `itens` separados.
 
 Além do script, reprove se a peça fizer algo da seção "Não faça" do guia, ou se ignorar a paleta que o guia tirou das referências.
 
