@@ -28,12 +28,19 @@ O script reprova travessão e as palavras da seção "proibidas" do antimodelo. 
 9. Hashtag demais. No máximo 6 no carrossel, 8 se a peça for só distribuição e a memória permitir.
 10. Para site: sem CTA visível, sem responsivo, com overflow horizontal.
 
+## Guia visual, carrossel
+`node motor/qa.js --cliente <slug> --carrossel <spec.json>`
+
+Isso exige `guia-visual.md` com paleta, tipografia, composição, foto ou gráfico, densidade, faça e não faça. Também exige pelo menos quatro desenhos diferentes num carrossel de quatro ou mais slides, sem repetir o tipo no slide seguinte. Lista precisa de `itens` separados.
+
+Além do script, reprove se a peça fizer algo da seção "Não faça" do guia, ou se ignorar a paleta que o guia tirou das referências.
+
 ## Redes, além do texto
 - Capa legível em miniatura. Até 10 palavras no título.
-- Um ideia por slide. Número no canto a partir do segundo.
-- Texto com margem. Não encha o quadro.
+- Uma ideia por slide. Lista com cada item em linha grande.
+- O quadro inteiro trabalha. Metade vazia reprova.
 - Reel: gancho nos 3 segundos, uma ideia, CTA no fim.
-- Não repita o mesmo tipo de capa da peça anterior.
+- Não repita o mesmo tipo de slide no seguinte.
 
 ## Tendência, sem copiar moda cega
 Combo da semana: carrossel e reel, não um só. Responder comentário é regra de operação humana, não deste script. Não use áudio de trend se a tese pedir silêncio.

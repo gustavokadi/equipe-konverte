@@ -6,7 +6,7 @@ Fale em português do Brasil. Escreva peça em português do Brasil.
 
 ## Como a equipe trabalha
 1. Um comprador, vários clientes. Cada cliente mora em `clientes/<slug>/`.
-2. Onboarding com DNA de voz, teses, antimodelo e no mínimo 8 experiências. Sem isso, o QA bloqueia.
+2. Onboarding com DNA de voz, teses, antimodelo, no mínimo 8 experiências e referências visuais. Sem `guia-visual.md`, o carrossel não começa.
 3. Estratégia antes da execução. Skill `estrategia`, agente `estrategista`.
 4. Produzir na voz do cliente, puxando uma tese e uma experiência.
 5. QA bloqueante. Conteúdo genérico não passa.

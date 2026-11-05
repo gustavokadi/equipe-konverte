@@ -19,6 +19,13 @@ function rodar(args) {
 function main() {
   rodar(['motor/instalar.js', '--tier', 'gratis', '--sim']);
   rodar(['motor/qa.js', '--cliente', 'clinica-sorriso-bom']);
+  rodar(['motor/referencias.js', '--cliente', 'clinica-sorriso-bom']);
+  rodar([
+    'motor/qa.js',
+    '--cliente', 'clinica-sorriso-bom',
+    '--carrossel', 'clientes/clinica-sorriso-bom/conteudo/specs/2026-11-05_clareamento-mitos.json',
+  ]);
+  rodar(['motor/banco-imagens.js', '--cliente', 'clinica-sorriso-bom', '--consulta', 'dental clinic']);
   rodar([
     'motor/render.js',
     '--cliente', 'clinica-sorriso-bom',

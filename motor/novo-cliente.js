@@ -43,7 +43,7 @@ function main() {
     JSON.stringify({ itens: [], criado_em: agora }, null, 2) + '\n'
   );
   console.log(`Cliente criado em clientes/${slug}`);
-  console.log('Próximo passo: preencher a memória (voz, experiências, teses, antimodelo) antes de produzir.');
+  console.log('Próximo passo: memória (voz, experiências, teses, antimodelo) e referências visuais antes do carrossel.');
 }
 
 main();

@@ -42,5 +42,35 @@ Empresa ou equipe com 4 pessoas ou mais precisa de Company License, mesmo que s�
 
 A Equipe Konverte não inclui Remotion no `package.json`. O caminho padrão de reel é ffmpeg, que não passa por essa licença.
 
+## Bancos de foto
+
+Conferido nas páginas oficiais em 05/11/2026. A chave é de quem comprou. Sem chave, o carrossel não baixa imagem.
+
+### Pexels
+Documentação: https://www.pexels.com/api/documentation/
+Licença do conteúdo: https://www.pexels.com/license/
+
+A API pede header `Authorization` com a chave. Limite padrão: 200 pedidos por hora e 20.000 por mês. A documentação pede um link visível para o Pexels e, quando der, o crédito do fotógrafo com link da foto. A licença do conteúdo permite uso gratuito, inclusive comercial. Atribuição não é obrigatória nessa licença, mas a diretriz da API pede o link. Não vender a foto sem alteração, não usar pessoa identificável de forma ofensiva, não sugerir endosso, não redistribuir o arquivo como banco, não usar a imagem como marca.
+
+O script grava o crédito em `referencias/banco/creditos.md` mesmo a licença não exigindo.
+
+### Unsplash
+Diretrizes da API, 27/07/2026: https://help.unsplash.com/en/articles/2511245-unsplash-api-guidelines
+
+É obrigatório usar as URLs que a API devolve, chamar `download_location` quando a foto é escolhida, e atribuir Unsplash e o fotógrafo com link e `utm_source` / `utm_medium=referral`. A chave fica só no `.env`. Não dá para copiar a experiência central do Unsplash nem vender a foto sem alteração. A API é para uso não automatizado em massa.
+
+O carrossel precisa de arquivo local para virar PNG offline. O script baixa a imagem, chama `download_location` e grava o crédito com os parâmetros utm. Quem cria a chave precisa ter o aplicativo aceito nas diretrizes da Unsplash.
+
+### Pixabay
+API: https://pixabay.com/api/docs/
+Resumo da licença: https://pixabay.com/service/license-summary/
+
+A licença permite uso gratuito e modificação. Atribuição não é obrigatória no resumo, e mesmo assim o script registra autor e página. A API pede para mostrar a origem quando os resultados aparecem, cache de 24 horas, e proíbe hotlink permanente: a imagem tem que ser baixada. Limite padrão: 100 pedidos a cada 60 segundos. Download em massa é proibido. Não vender o arquivo sozinho, sem trabalho em cima. Não usar de forma enganosa nem como marca.
+
+### Freepik, só plano pago plus
+A API pública atual é a Magnific (antes Freepik API): https://www.freepik.com/api
+
+É paga, em créditos do plano de quem comprou, e inclui biblioteca de estoque. A v1 não chama essa API. Não coloque a chave no plano grátis nem no pago. Se um dia entrar, fica atrás do plano pago plus e de um pedido explícito, porque cada chamada gasta crédito.
+
 ## ffmpeg
 O binário do ffmpeg na máquina do comprador segue a licença da build que ele instalou. O script nosso só chama o comando. Build típica de distribuição Linux é GPL. Não embarcamos o binário.

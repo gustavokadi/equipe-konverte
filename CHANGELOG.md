@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.1.0, 2026-11-05
+
+- Briefing visual obrigatório antes do carrossel: `referencias/` e `guia-visual.md`
+- QA confere o guia e a variedade dos slides
+- Cinco desenhos de slide: frase, foto cheia, foto dividida, lista e chamada
+- Script opcional de banco (Pexels, Unsplash, Pixabay), com crédito. Sem chave, layout gráfico
+- Freepik fica documentado só no plano pago plus, sem chamada
+- Carrossel da clínica demo renderizado de novo
+
 ## 1.0.0, 2026-11-05
 
 Primeira versão da Equipe Konverte.

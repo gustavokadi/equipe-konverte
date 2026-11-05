@@ -13,7 +13,7 @@ O cliente de demonstração, Clínica Sorriso Bom, é fictício. O carrossel em 
 - Memória por cliente: voz, oferta, identidade, transcrição de call, teses, antimodelo, banco de experiências
 - QA que barra texto genérico
 - Estratégia antes de produzir
-- Carrossel em PNG, no Chrome da sua máquina, com Bebas Neue e Inter embutidas
+- Carrossel em PNG, com guia visual obrigatório e cinco desenhos de slide. Foto de banco só com a sua chave. Sem chave, o slide fica gráfico
 - Reel editado no ffmpeg: corte, silêncio, legenda e B-roll com o gancho por cima
 - Página HTML e deploy na Cloudflare Pages ou na Netlify, com o seu token
 - Proposta a partir da call, abordagem de WhatsApp em 4 etapas (sem disparo), anúncio de Meta e Google, painel local
@@ -98,7 +98,7 @@ A demo pronta está em `clientes/clinica-sorriso-bom`. Leia o `DEMO.md` de lá a
 | `/novo-cliente` | Pasta `clientes/<nome>/` |
 | `/radar` | Ideias do dia no nicho, por RSS |
 | `/pautas` | Calendário do mês |
-| `/carrossel` | PNG e legenda |
+| `/carrossel` | PNG e legenda, depois do guia visual |
 | `/reels` | Roteiro e mp4 editado |
 | `/roteiro-clone` | Roteiro para HeyGen e ElevenLabs |
 | `/site` | HTML e, se você pedir, deploy |
@@ -132,7 +132,7 @@ Remotion e HyperFrames são extras. Remotion, para empresa com mais de 3 pessoas
 
 Tudo opcional. O plano grátis roda com o `.env` vazio.
 
-- `PEXELS_API_KEY`, foto de banco no carrossel
+- `PEXELS_API_KEY`, `UNSPLASH_ACCESS_KEY` e `PIXABAY_API_KEY`, fotos do carrossel. Sem chave, o slide fica gráfico. O crédito vai para `referencias/banco/creditos.md`. Freepik é pago e só no plano pago plus, e a v1 não chama essa API
 - `FIRECRAWL_API_KEY`, radar além do RSS. O código do Firecrawl é AGPL e não vem junto
 - `CLOUDFLARE_API_TOKEN` ou `NETLIFY_AUTH_TOKEN`, só na hora de publicar a página
 - HeyGen e ElevenLabs, só no pago plus

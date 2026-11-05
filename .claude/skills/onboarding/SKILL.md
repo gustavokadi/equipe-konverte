@@ -18,7 +18,7 @@ Enquanto `node motor/qa.js --cliente <slug>` falhar, este cliente não produz ca
 2. Persona: último cliente bom, dor nas palavras dele, objeção que mais aparece.
 3. Preferências: quem aprova, palavras proibidas, se aceita vídeo.
 4. DNA de voz. Siga a skill `dna-de-voz`. Sem amostra real, diga que o DNA é chute e não produza peça ainda.
-5. Referências.
+5. Referências visuais. Rode `node motor/referencias.js --cliente <slug>`. Se a pasta só tiver o pedido em branco, pare esta etapa e peça prints ou links do Pinterest, 2 a 3 concorrentes, posts de que gosta e de que não gosta, logo, cores e fontes. Salve em `referencias/`. Leia imagem em modo multimodal e grave `guia-visual.md` (paleta, tipografia, composição, foto ou gráfico, densidade, faça e não faça). Sem isso, o carrossel não começa.
 6. Experiências. Meta: 8. Caso, erro próprio, bastidor, pergunta que se repete. Abaixo de 8, o próximo passo é coleta, não produção.
 7. Antimodelo. O que dá vergonha, o que a marca não é, formato vetado.
 8. Teses. 3 a 5 frases. Teste: alguém do mercado discordaria? Se ninguém discordaria, é slogan. Não cole.

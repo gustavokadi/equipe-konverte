@@ -5,6 +5,7 @@ A Mara chegou com dois tubos da farmácia e o dente doendo no ar. A gente parou 
 O que a avaliação olha:
 - gengiva quieta
 - sensibilidade de verdade
+- expectativa escrita
 - a cor que o esmalte aguenta
 
 Se doer, a sessão para. Marca a avaliação no Cambuí.

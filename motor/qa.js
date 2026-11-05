@@ -61,14 +61,47 @@ function revisarTexto(texto, proibidas) {
   return erros;
 }
 
+function revisarGuia(dir) {
+  const erros = [];
+  const guia = ler(path.join(dir, 'guia-visual.md'));
+  if (!guia.trim()) return ['falta guia-visual.md'];
+  for (const secao of ['Paleta', 'Tipografia', 'Composição', 'Foto ou gráfico', 'Densidade', 'Faça', 'Não faça']) {
+    if (!new RegExp(`^##\\s+${secao}`, 'im').test(guia)) erros.push(`guia visual sem seção ${secao}`);
+  }
+  return erros;
+}
+
+function revisarCarrossel(dir, specPath) {
+  const erros = revisarGuia(dir);
+  const spec = JSON.parse(fs.readFileSync(path.resolve(specPath), 'utf8'));
+  const slides = spec.slides || [];
+  const tipos = slides.map((s) => s.tipo);
+  const distintos = new Set(tipos);
+  if (slides.length >= 4 && distintos.size < 4) erros.push(`só ${distintos.size} composições diferentes`);
+  for (let i = 1; i < tipos.length; i++) {
+    if (tipos[i] && tipos[i] === tipos[i - 1]) erros.push(`slides ${i} e ${i + 1} repetem o tipo ${tipos[i]}`);
+  }
+  const permitidos = ['frase', 'foto-cheia', 'foto-split', 'lista', 'cta'];
+  tipos.forEach((tipo, i) => {
+    if (!permitidos.includes(tipo)) erros.push(`slide ${i + 1} com tipo desconhecido: ${tipo || 'vazio'}`);
+  });
+  slides.forEach((slide, i) => {
+    if (slide.tipo === 'lista') {
+      if (!Array.isArray(slide.itens) || slide.itens.length < 2) erros.push(`slide ${i + 1} lista sem itens grandes`);
+    }
+  });
+  return erros;
+}
+
 function main() {
   const args = argsParaObjeto(process.argv.slice(2));
   if (!args.cliente) {
-    console.error('Uso: node motor/qa.js --cliente <slug> [--arquivo texto.md]');
+    console.error('Uso: node motor/qa.js --cliente <slug> [--arquivo texto.md] [--carrossel spec.json]');
     process.exit(1);
   }
   const dir = pastaCliente(args.cliente);
   const erros = revisarMemoria(dir);
+  if (args.carrossel) erros.push(...revisarCarrossel(dir, args.carrossel));
   if (args.arquivo) {
     const texto = ler(path.resolve(args.arquivo));
     const proibidas = palavrasProibidas(ler(path.join(dir, 'memoria', 'antimodelo.md')));
