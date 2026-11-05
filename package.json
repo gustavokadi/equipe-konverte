@@ -1,0 +1,21 @@
+{
+  "name": "equipe-konverte",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Equipe de marketing com IA dentro do VS Code. Produto da Konverte.",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "instalar": "node motor/instalar.js",
+    "test": "node test/smoke.js",
+    "render": "node motor/render.js",
+    "reels": "node motor/video/editar.js",
+    "painel": "node motor/painel.js",
+    "site": "node motor/site.js",
+    "novo-cliente": "node motor/novo-cliente.js"
+  },
+  "dependencies": {
+    "puppeteer-core": "^23.11.1"
+  }
+}

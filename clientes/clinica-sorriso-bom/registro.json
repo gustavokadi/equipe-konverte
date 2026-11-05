@@ -1,0 +1,26 @@
+{
+  "itens": [
+    {
+      "status": "aguardando",
+      "criado_em": "2026-11-05T15:50:27.223Z",
+      "id": "2026-11-05_clareamento-mitos",
+      "tipo": "carrossel",
+      "caminho": "conteudo/output/2026-11-05_clareamento-mitos"
+    },
+    {
+      "status": "aguardando",
+      "criado_em": "2026-11-05T15:50:31.845Z",
+      "id": "2026-11-05_clareamento-consulta",
+      "tipo": "reel",
+      "caminho": "conteudo/reels/2026-11-05_clareamento-consulta"
+    },
+    {
+      "status": "aguardando",
+      "criado_em": "2026-11-05T15:50:31.969Z",
+      "id": "2026-11-05_formato",
+      "tipo": "roteiro-clone",
+      "caminho": "clone/2026-11-05_formato"
+    }
+  ],
+  "atualizado_em": "2026-11-05T15:50:31.924Z"
+}

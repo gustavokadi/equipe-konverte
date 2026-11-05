@@ -1,0 +1,27 @@
+/* Clínica Sorriso Bom, cliente fictício de demonstração. */
+
+:root {
+  --cor-fundo: #12352F;
+  --cor-fundo-card: #1B463E;
+  --cor-borda: #2C5A50;
+  --cor-texto: #F3EDE2;
+
+  --cor-destaque: #E0A15A;
+  --cor-destaque-claro: #F0C48A;
+  --cor-destaque-escuro: #A86B32;
+
+  --cinza-medio: #C9C1B4;
+  --cinza-claro: #F3EDE2;
+  --cinza-escuro: #0C2420;
+
+  --fonte-titulo: 'Bebas Neue', sans-serif;
+  --fonte-corpo: 'Inter', sans-serif;
+
+  --padding-mobile: 1.25rem;
+  --padding-desktop: 2rem;
+  --border-radius: 0px;
+
+  --borda-sutil: 1px solid var(--cor-borda);
+  --borda-destaque: 1px solid var(--cor-destaque);
+  --borda-left: 8px solid var(--cor-destaque);
+}

@@ -1,0 +1,20 @@
+{
+  "nome": "{{NOME}}",
+  "slug": "{{SLUG}}",
+  "responsavel": "{{RESPONSAVEL}}",
+  "cidade": "{{CIDADE}}",
+  "bairro": "",
+  "instagram": "{{INSTAGRAM}}",
+  "nicho": "{{NICHO}}",
+  "consulta_radar": "{{NICHO}}",
+  "oferta_nome": "{{OFERTA}}",
+  "oferta_preco": "{{PRECO}}",
+  "oferta_detalhe": "{{OFERTA_DETALHE}}",
+  "whatsapp_exibicao": "",
+  "frase": "{{FRASE}}",
+  "publico": "{{PUBLICO}}",
+  "prova": [],
+  "servicos": [],
+  "faq": [],
+  "demo": false
+}

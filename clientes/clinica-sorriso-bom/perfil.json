@@ -1,0 +1,31 @@
+{
+  "nome": "Clínica Sorriso Bom",
+  "slug": "clinica-sorriso-bom",
+  "responsavel": "Dra. Helena Prado",
+  "cidade": "Campinas",
+  "bairro": "Cambuí",
+  "instagram": "@clinicasorrisobom",
+  "nicho": "odontologia preventiva e clareamento",
+  "consulta_radar": "clareamento dental sensibilidade gengiva Campinas",
+  "oferta_nome": "Avaliação de clareamento",
+  "oferta_preco": "R$ 150",
+  "oferta_detalhe": "A avaliação olha gengiva, sensibilidade e a cor que dá para prometer. O gel só entra se a boca estiver pronta.",
+  "whatsapp_exibicao": "(19) 90000-0000",
+  "frase": "Primeiro a gengiva. Depois o gel.",
+  "publico": "Adultos de Campinas que já tentaram clarear em casa e voltaram com sensibilidade.",
+  "prova": [
+    { "numero": "12 anos", "legenda": "de cadeira no Cambuí" },
+    { "numero": "4 passos", "legenda": "antes de falar em tom de branco" }
+  ],
+  "servicos": [
+    { "nome": "Avaliação", "texto": "Exame, fotos e um plano escrito. Sem gel no mesmo dia se a gengiva estiver irritada." },
+    { "nome": "Clareamento em consultório", "texto": "Só depois da avaliação. A sessão para se a sensibilidade passar do combinado." },
+    { "nome": "Manutenção", "texto": "Moldeira e retorno. A cor não é assinatura eterna." }
+  ],
+  "faq": [
+    { "pergunta": "Dá para clarear com a gengiva sangrando?", "resposta": "Não. Primeiro trata a gengiva. Gel em gengiva inflamada piora a dor e a foto." },
+    { "pergunta": "O branqueador da farmácia substitui a consulta?", "resposta": "Não substitui. Ele não vê retração, trinca nem expectativa fora do esmalte." },
+    { "pergunta": "Fica branco de novela?", "resposta": "Fica no tom que o seu esmalte permite. Quem promete branco de papel não vai estar na cadeira quando doer." }
+  ],
+  "demo": true
+}
