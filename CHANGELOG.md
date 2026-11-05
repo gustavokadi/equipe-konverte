@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1, 2026-11-05
+
+- O banco pede a foto já no tamanho do slide, com crédito no PNG
+- A demo da clínica usa duas fotos da Pexels no mito e na abertura da Mara
+
 ## 1.1.0, 2026-11-05
 
 - Briefing visual obrigatório antes do carrossel: `referencias/` e `guia-visual.md`

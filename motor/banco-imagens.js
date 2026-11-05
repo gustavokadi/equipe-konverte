@@ -37,6 +37,28 @@ async function baixar(url, destino) {
   return buf.length;
 }
 
+function urlNitida(url) {
+  const u = new URL(url);
+  u.searchParams.set('auto', 'compress');
+  u.searchParams.set('cs', 'tinysrgb');
+  u.searchParams.set('fit', 'crop');
+  u.searchParams.set('w', '1800');
+  u.searchParams.set('h', '2400');
+  u.searchParams.delete('dpr');
+  return u.toString();
+}
+
+function fichaPexels(foto) {
+  return {
+    banco: 'Pexels',
+    arquivoUrl: urlNitida(foto.src?.original || foto.src?.large2x || foto.src?.large),
+    autor: foto.photographer,
+    autorUrl: foto.photographer_url,
+    pagina: foto.url,
+    credito: `Foto de ${foto.photographer} no Pexels. ${foto.url}`,
+  };
+}
+
 async function pexels(consulta, quantidade) {
   const chave = process.env.PEXELS_API_KEY;
   if (!chave) return [];
@@ -44,14 +66,17 @@ async function pexels(consulta, quantidade) {
   const res = await fetch(url, { headers: { Authorization: chave } });
   if (!res.ok) throw new Error(`Pexels respondeu ${res.status}`);
   const json = await res.json();
-  return (json.photos || []).slice(0, quantidade).map((foto) => ({
-    banco: 'Pexels',
-    arquivoUrl: foto.src?.large2x || foto.src?.large,
-    autor: foto.photographer,
-    autorUrl: foto.photographer_url,
-    pagina: foto.url,
-    credito: `Foto de ${foto.photographer} no Pexels. ${foto.url}`,
-  }));
+  return (json.photos || []).slice(0, quantidade).map(fichaPexels);
+}
+
+async function pexelsPorId(id) {
+  const chave = process.env.PEXELS_API_KEY;
+  if (!chave) return [];
+  const res = await fetch(`https://api.pexels.com/v1/photos/${encodeURIComponent(id)}`, {
+    headers: { Authorization: chave },
+  });
+  if (!res.ok) throw new Error(`Pexels respondeu ${res.status}`);
+  return [fichaPexels(await res.json())];
 }
 
 async function unsplash(consulta, quantidade) {
@@ -128,14 +153,23 @@ async function main() {
   }
 
   const lotes = [];
-  for (const buscar of [pexels, unsplash, pixabay]) {
+  if (args.id) {
     try {
-      const achados = await buscar(consulta, quantidade);
-      lotes.push(...achados);
+      lotes.push(...(await pexelsPorId(args.id)));
     } catch (err) {
       console.error(err.message);
     }
-    if (lotes.length >= quantidade) break;
+  }
+  if (lotes.length === 0) {
+    for (const buscar of [pexels, unsplash, pixabay]) {
+      try {
+        const achados = await buscar(consulta, quantidade);
+        lotes.push(...achados);
+      } catch (err) {
+        console.error(err.message);
+      }
+      if (lotes.length >= quantidade) break;
+    }
   }
   const escolhidos = lotes.slice(0, quantidade);
   if (escolhidos.length === 0) {

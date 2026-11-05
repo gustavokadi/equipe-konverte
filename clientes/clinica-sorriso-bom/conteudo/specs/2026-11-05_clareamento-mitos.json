@@ -17,6 +17,8 @@
     },
     {
       "tipo": "foto-split",
+      "foto": "referencias/banco/1793896798779-1.jpg",
+      "credito": "Foto: Nadezhda Moryak / Pexels",
       "kicker": "Mito 01",
       "selo": "MITO",
       "palavra": "GEL FORTE",
@@ -27,6 +29,8 @@
     },
     {
       "tipo": "foto-cheia",
+      "foto": "referencias/banco/1793896799336-1.jpg",
+      "credito": "Foto: Nataliya Vaitkevich / Pexels",
       "kicker": "Cadeira, EXP-01",
       "selo": "A MARA",
       "titulo": "Dois tubos, quinze dias",

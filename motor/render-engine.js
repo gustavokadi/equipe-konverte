@@ -135,6 +135,9 @@ function htmlFrase(c, slide, width, height, numero, total) {
 function htmlFotoCheia(c, slide, width, height, numero, total, foto) {
   const direita = `${numero} / ${String(total).padStart(2, '0')}`;
   const aviso = foto ? '' : `<div style="position:absolute;top:36px;right:36px;background:${c.destaque};color:${c.escuro};font-size:16px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:8px 12px;">sem foto de banco</div>`;
+  const credito = slide.credito
+    ? `<div style="margin-top:10px;font-size:16px;letter-spacing:0.04em;color:${c.medio};">${escapar(slide.credito)}</div>`
+    : '';
   const fundo = foto
     ? `<img src="${foto}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;">`
     : `<div style="position:absolute;inset:0;background:${c.destaque};"></div>
@@ -147,6 +150,7 @@ function htmlFotoCheia(c, slide, width, height, numero, total, foto) {
       <div class="kicker">${escapar(slide.kicker || '')}</div>
       <h1 style="font-family:${c.titulo};font-weight:400;font-size:92px;line-height:0.9;margin-top:16px;">${escapar(slide.titulo || '')}</h1>
       <p style="font-size:34px;line-height:1.3;margin-top:22px;max-width:920px;">${escapar(slide.texto || '')}</p>
+      ${credito}
       ${rodapeHtml(c, slide.rodape, direita)}
     </div>`);
 }
@@ -156,8 +160,11 @@ function htmlFotoSplit(c, slide, width, height, numero, total, foto) {
   const aviso = foto
     ? ''
     : `<div style="display:inline-block;margin-top:18px;background:${c.escuro};color:${c.claro};font-size:16px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:8px 12px;">sem foto de banco</div>`;
+  const creditoFoto = foto && slide.credito
+    ? `<div style="position:absolute;left:16px;right:16px;bottom:16px;background:rgba(12,36,32,0.78);color:#F3EDE2;font-size:15px;line-height:1.3;padding:8px 10px;">${escapar(slide.credito)}</div>`
+    : '';
   const painel = foto
-    ? `<img src="${foto}" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">`
+    ? `<img src="${foto}" alt="" style="width:100%;height:100%;object-fit:cover;display:block;">${creditoFoto}`
     : `<div style="height:100%;background:${c.claro};color:${c.escuro};padding:48px 40px;display:flex;flex-direction:column;justify-content:space-between;">
         <div style="font-size:20px;letter-spacing:0.18em;font-weight:700;">${escapar(slide.selo || 'PAINEL')}</div>
         <div style="font-family:${c.titulo};font-size:200px;line-height:0.8;">${escapar(numero)}</div>

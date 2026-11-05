@@ -91,7 +91,7 @@ async function main() {
     tier,
     atualizado_em: new Date().toISOString(),
     produto: 'equipe-konverte',
-    versao: '1.1.0',
+    versao: '1.1.1',
   });
   escreverJson(path.join(RAIZ, 'config', 'ambiente.json'), { chrome });
 
