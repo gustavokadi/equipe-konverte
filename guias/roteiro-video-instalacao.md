@@ -31,7 +31,7 @@ Pago: Claude Code, mesmo diretório, `claude`. Pago plus: HeyGen e ElevenLabs, e
 Não dispara WhatsApp. Não sobe anúncio. Não publica página sem o token dele. Preço de proposta continua exemplo até ele colocar a tabela.
 
 ## 7. Fecho, 20 segundos
-"O arquivo de licença ainda pede revisão do advogado. O uso é de um comprador, sem revender o pacote."
+"O uso é no próprio negócio de quem comprou. Sem revender o pacote. O contrato de advogado pode vir depois."
 
 ## O que deixar na tela, em texto
 - URL do repositório

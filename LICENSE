@@ -11,19 +11,19 @@ O conjunto de arquivos deste repositório, chamado Equipe Konverte, incluindo in
 Gustavo Konverte, titular da agência Konverte. O nome "Gustavo Konverte" neste arquivo identifica o ofertante do produto. Razão social, CNPJ e foro ficam para o texto revisado.
 
 3. Quem pode usar
-Uma compra, um uso. A pessoa ou a empresa que pagou pode usar o sistema na operação dela, com a equipe interna dela, para os clientes dela.
+Uso no próprio negócio do comprador. Quem compra é um empresário e usa a Equipe Konverte na agência dele ou no negócio dele, com a equipe interna dele. Não é licença para outra pessoa revender o pacote.
 
 4. Preço
 R$ 97, na oferta vigente no momento da compra. Este arquivo não substitui o checkout nem cria prazo de garantia. Garantia, reembolso e suporte entram no texto jurídico e na página de venda, quando o Gustavo definir.
 
 5. O que não pode
-- Revender, sublicenciar ou republicar este pacote, inteiro ou em parte, como produto
-- Entregar estes arquivos a um cliente da agência no lugar de entregar o resultado (post, página, vídeo)
+- Revender, redistribuir ou sublicenciar este pacote, inteiro ou em parte
+- Entregar estes arquivos a um cliente no lugar de entregar o resultado (post, página, vídeo)
 - Remover este aviso
 - Usar a marca Konverte como se fosse marca de quem comprou
 
 6. O que pode
-Entregar ao cliente final da agência as peças produzidas com o sistema (imagem, texto, página, vídeo), desde que o material daquele cliente seja dele e as licenças de terceiros sejam respeitadas.
+Entregar ao cliente do próprio negócio as peças feitas com a ferramenta (imagem, texto, página, vídeo), desde que o material daquele cliente seja dele e as licenças de terceiros sejam respeitadas.
 
 7. Terceiros
 Fontes, ffmpeg, Puppeteer, e o que está listado em TERCEIROS.md, seguem as licenças de cada um. Remotion, se for instalado, tem licença própria e pode exigir Company License. Este produto não concede licença de Remotion, HeyGen, ElevenLabs, Cloudflare nem Netlify.
@@ -35,4 +35,4 @@ O sistema ajuda a produzir marketing. Não promete alcance, venda, cliente nem p
 O cliente Clínica Sorriso Bom é fictício. Não é caso real e não autoriza uso da história como prova clínica ou comercial.
 
 10. Até a revisão
-Se este aviso ainda estiver no topo, o Gustavo não deve tratar o arquivo como contrato fechado com o comprador.
+Este texto não substitui um contrato revisado por advogado. A formalização jurídica pode vir depois. Enquanto o aviso do topo estiver aqui, o arquivo não é contrato fechado.

@@ -26,3 +26,5 @@ Os scripts `node motor/...` rodam sem Claude. PNG, mp4 e HTML não precisam de A
 Não envie mensagem, não publique e não mostre segredo. Skill `seguranca`.
 
 Cliente de demonstração: `clientes/clinica-sorriso-bom`. É fictício. O carrossel e o reel dessa pasta foram gerados pelos scripts.
+
+Licença: uso no próprio negócio do comprador. Sem revenda, redistribuição ou sublicença do pacote. Peças feitas para os clientes dele podem ser entregues. Os arquivos do sistema, não. Ver `LICENSE`.

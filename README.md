@@ -145,7 +145,7 @@ Segurança a mais, opcional: `npx -y cc-safety-net@latest install`. É MIT e nã
 
 ## Licença
 
-Uso de um comprador, sem revenda do pacote. O arquivo `LICENSE` pede revisão jurídica antes de valer como contrato. Peças feitas para o cliente da agência podem ser entregues a ele. Os arquivos do sistema, não.
+Uso no próprio negócio do comprador, na agência ou no negócio de quem comprou. Sem revenda, redistribuição ou sublicença do pacote. As peças feitas para os clientes dele podem ser entregues. Os arquivos do sistema, não. O `LICENSE` não substitui contrato de advogado. A formalização pode vir depois.
 
 ## Versão
 

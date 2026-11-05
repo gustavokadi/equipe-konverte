@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.2, 2026-11-05
+
+- A licença deixa claro: uso no próprio negócio do comprador. Sem revenda, redistribuição ou sublicença do pacote. As peças para os clientes dele podem ser entregues.
+
 ## 1.3.1, 2026-11-05
 
 - A oferta da agência deixa de ser exemplo. Cuidado gerenciado: R$ 2.000 por mês, por enquanto. Sem outros preços inventados.
