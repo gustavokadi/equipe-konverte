@@ -41,6 +41,6 @@ Cada um tem arquivo em `.claude/commands/` e skill em `.claude/skills/<nome>/SKI
 - `clientes/` memória e entregas
 - `motor/` render, ffmpeg, instalação, QA, painel, deploy
 - `motor/fontes/` Bebas Neue e Inter, OFL
-- `agencia/oferta.md` preços da agência. Enquanto estiver como exemplo, proposta é rascunho
+- `agencia/oferta.md` preço oficial de cuidado gerenciado: R$ 2.000 por mês, por enquanto. Sem outros preços de agência.
 - `painel/index.html` painel local
 - `AGENTS.md` e `GEMINI.md` para Codex, Gemini CLI e Antigravity

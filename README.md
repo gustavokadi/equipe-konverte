@@ -141,7 +141,7 @@ Segurança a mais, opcional: `npx -y cc-safety-net@latest install`. É MIT e nã
 
 ## Preços da agência
 
-`agencia/oferta.md` está marcado como exemplo. Enquanto estiver assim, a proposta sai como rascunho e não deve ser enviada. O Gustavo troca pelos preços oficiais da Konverte.
+`agencia/oferta.md` tem o preço oficial de cuidado gerenciado: R$ 2.000 por mês, por enquanto, quando o cliente quer que a agência cuide. Não há outros preços de agência nesse arquivo.
 
 ## Licença
 

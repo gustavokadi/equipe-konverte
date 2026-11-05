@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.1, 2026-11-05
+
+- A oferta da agência deixa de ser exemplo. Cuidado gerenciado: R$ 2.000 por mês, por enquanto. Sem outros preços inventados.
+
 ## 1.3.0, 2026-11-05
 
 - O padrão do cliente volta a ser foto e letra. O básico preto e branco fica opcional, com `estilo: basico`.
