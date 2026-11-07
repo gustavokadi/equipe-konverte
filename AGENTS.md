@@ -8,6 +8,7 @@ Quando a pessoa escrever um comando com barra, abra o arquivo correspondente e s
 |---|---|
 | /instalar | `.claude/skills/instalar/SKILL.md` |
 | /novo-cliente | `.claude/skills/novo-cliente/SKILL.md` |
+| /abrir | `.claude/skills/abrir/SKILL.md` |
 | /radar | `.claude/skills/radar/SKILL.md` |
 | /pautas | `.claude/skills/pautas/SKILL.md` |
 | /carrossel | `.claude/skills/carrossel/SKILL.md` |
@@ -17,6 +18,8 @@ Quando a pessoa escrever um comando com barra, abra o arquivo correspondente e s
 | /proposta | `.claude/skills/proposta/SKILL.md` |
 | /prospeccao | `.claude/skills/prospeccao/SKILL.md` |
 | /anuncio | `.claude/skills/anuncio/SKILL.md` |
+| /avaliacao | `.claude/skills/avaliacao/SKILL.md` |
+| /email | `.claude/skills/email/SKILL.md` |
 | /painel | `.claude/skills/painel/SKILL.md` |
 | /salvar | `.claude/skills/salvar/SKILL.md` |
 | /seo | `.claude/skills/seo/SKILL.md` |

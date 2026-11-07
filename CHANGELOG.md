@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.3, 2026-11-07
+
+- Três serviços novos, só texto ou leitura: `/abrir`, `/avaliacao` e `/email`. Nenhum envia nem publica.
+- O `.gitignore` passa a cobrir `.env.local`, outros `.env` de segredo, `.pem` e `.key`. O `.env.example` continua no repositório.
+
 ## 1.3.2, 2026-11-05
 
 - A licença deixa claro: uso no próprio negócio do comprador. Sem revenda, redistribuição ou sublicença do pacote. As peças para os clientes dele podem ser entregues.

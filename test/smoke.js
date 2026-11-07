@@ -88,8 +88,8 @@ function main() {
   rodar(['motor/instalar.js', '--tier', 'gratis', '--sim']);
 
   const comandos = [
-    'instalar', 'novo-cliente', 'radar', 'pautas', 'carrossel', 'reels', 'roteiro-clone',
-    'site', 'proposta', 'prospeccao', 'anuncio', 'painel', 'salvar', 'seo',
+    'instalar', 'novo-cliente', 'abrir', 'radar', 'pautas', 'carrossel', 'reels', 'roteiro-clone',
+    'site', 'proposta', 'prospeccao', 'anuncio', 'avaliacao', 'email', 'painel', 'salvar', 'seo',
   ];
   for (const nome of comandos) {
     assert.ok(fs.existsSync(path.join(RAIZ, '.claude/commands', `${nome}.md`)), nome);

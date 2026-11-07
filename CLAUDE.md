@@ -26,12 +26,14 @@ O plano fica em `config/tier.json`. Troca sem reinstalar: `node motor/instalar.j
 Render de PNG, vídeo e página não gasta API de IA. Quem gasta token é a conversa com o modelo, no plano que a pessoa já tem.
 
 ## Comandos
-`/instalar` `/novo-cliente` `/radar` `/pautas` `/carrossel` `/reels` `/roteiro-clone` `/site` `/proposta` `/prospeccao` `/anuncio` `/painel` `/salvar`
+`/instalar` `/novo-cliente` `/abrir` `/radar` `/pautas` `/carrossel` `/reels` `/roteiro-clone` `/site` `/proposta` `/prospeccao` `/anuncio` `/avaliacao` `/email` `/painel` `/salvar`
 
 Cada um tem arquivo em `.claude/commands/` e skill em `.claude/skills/<nome>/SKILL.md`. Siga a skill. Não resuma por cima dela.
 
 ## O que não fazer
 - Não enviar WhatsApp. `/prospeccao` entrega texto para copiar, com regra anti-spam.
+- Não enviar e-mail. `/email` só grava rascunho.
+- Não publicar avaliação no Google. `/avaliacao` só grava o texto para copiar.
 - Não subir anúncio. Meta Ads MCP é roadmap v2.
 - Não publicar site sem token da pessoa e sem `--publicar`.
 - Não copiar código sem licença. Ver `TERCEIROS.md`.
