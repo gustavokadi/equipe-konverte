@@ -17,6 +17,9 @@ Confira o plano em `config/tier.json`. Se estiver vazio ou errado, rode com a pe
 - `node motor/painel.js` painel
 - `node motor/qa.js` gate da memória
 - `node motor/radar.js` ideias do dia
+- `node motor/abrir.js` resumo do que já está registrado
+
+`/avaliacao` e `/email` também rodam neste plano. Os dois só escrevem texto. Não publicam no Google e não enviam e-mail.
 
 Não chame Remotion, HeyGen nem ElevenLabs no plano grátis. O roteiro de clone pode ser escrito. O render do clone, não.
 

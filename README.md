@@ -96,6 +96,7 @@ A demo pronta está em `clientes/clinica-sorriso-bom`. Leia o `DEMO.md` de lá a
 |---|---|
 | `/instalar` | Checagem da máquina e o plano |
 | `/novo-cliente` | Pasta `clientes/<nome>/` |
+| `/abrir` | Resumo do plano, da memória e das pendências já registradas |
 | `/radar` | Ideias do dia no nicho, por RSS |
 | `/pautas` | Calendário do mês |
 | `/carrossel` | PNG e legenda, depois do guia visual |
@@ -105,11 +106,27 @@ A demo pronta está em `clientes/clinica-sorriso-bom`. Leia o `DEMO.md` de lá a
 | `/proposta` | Proposta a partir da transcrição |
 | `/prospeccao` | 4 mensagens de WhatsApp, para você copiar |
 | `/anuncio` | Meta e Google, sem subir campanha |
+| `/avaliacao` | Resposta para copiar no Google. Não publica |
+| `/email` | Rascunho de orçamento, atendimento ou acompanhamento. Não envia |
 | `/painel` | `painel/index.html` |
 | `/salvar` | Registro, aprovação, status de publicado |
 | `/seo` | Título, descrição e página |
 
-Codex usa `AGENTS.md`. A lista aponta para a mesma skill.
+Codex usa `AGENTS.md`. A lista aponta para a mesma skill. Gemini CLI e Antigravity usam os mesmos textos em `.gemini/commands/`.
+
+## O que a ferramenta cria
+
+Isto é o que sai em arquivo, para a pessoa revisar. Não é publicação nem envio.
+
+- Carrossel em PNG e legenda
+- Reel editado no ffmpeg
+- Página HTML local
+- Pauta, proposta, anúncio e texto de prospecção para copiar
+- Resposta de avaliação do Google, só o texto
+- Rascunho de e-mail de orçamento, atendimento ou acompanhamento
+- Resumo de abertura com as pendências que já estão em `registro.json`
+
+Não cria post no Google, não dispara e-mail, não sobe anúncio e não manda WhatsApp. Metricool, newsletter e o conector de anúncio da Meta continuam só no roadmap.
 
 ## Prospecção, sem disparo
 
